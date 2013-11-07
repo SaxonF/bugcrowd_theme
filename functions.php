@@ -64,7 +64,7 @@ function bugcrowd_setup() {
 	register_nav_menu( 'primary', __( 'Primary Menu', 'bugcrowd' ) );
 
 
-	register_nav_menu( 'primary', __( 'Footer Menu', 'bugcrowd' ) );
+	register_nav_menu( 'footer', __( 'Footer Menu', 'bugcrowd' ) );
 
 	// This theme uses a custom image size for featured images, displayed on "standard" posts.
 	add_theme_support( 'post-thumbnails' );

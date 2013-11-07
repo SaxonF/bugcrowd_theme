@@ -12,10 +12,10 @@
 
 	<?php if ( is_single() ) : ?>
 		<article class="post feature container">
-			<h2 class="beta entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 			<div class="entry-meta caps">
 				<?php bugcrowd_entry_meta(); ?>
 			</div>
+			<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 			<?php the_post_thumbnail(); ?>
 			<div class="entry-summary delta">
 				<?php the_excerpt(); ?>
@@ -23,9 +23,9 @@
 			<div class="entry-content">
 				<aside>
 					<nav class="nav-single">
-						<span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'bugcrowd' ) . '</span> %title' ); ?></span>
-						<span class="nav-list"><a href="<?php echo home_url(); ?>"><?php _e( 'List', 'bugcrowd' ); ?> </a>
-						<span class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'bugcrowd' ) . '</span>' ); ?></span>
+						<span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '', 'Previous post link', 'bugcrowd' ) . '%title </span> ' ); ?></span>
+						<span class="nav-list"><a href="<?php echo home_url(); ?>"><span><?php _e( 'List', 'bugcrowd' ); ?></span></a></span>
+						<span class="nav-next"><?php next_post_link( '%link', '<span class="meta-nav"> %title' . _x( '', 'Next post link', 'bugcrowd' ) . '</span>' ); ?></span>
 					</nav><!-- .nav-single -->
 					<div class="social">
 						<?php dd_buffer_generate('Normal') ?>

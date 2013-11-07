@@ -12,7 +12,7 @@
   height: 42px;
   line-height: 42px;
   width: 100%;
-  padding: 10px 20px;
+  padding: 20px 20px;
   font-size: .888em;
   color: white;
   font-family: Helvetica, arial, sans-serif;
@@ -37,174 +37,263 @@
 #masthead :-ms-input-placeholder {
   color: #6e6974;
 }
-/* line 45, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
+#masthead #nav {
+  margin-bottom: 70px;
+}
+/* line 47, ../sass/style.scss */
 #masthead .site-title {
+  margin: 0;
+}
+/* line 49, ../sass/style.scss */
+#masthead .site-title a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+  width: 143px;
+  display: block;
+  height: 50px;
+  background: url("https://bugcrowd.com/assets/public/logo-white.png") no-repeat left center;
 }
-/* line 50, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 #masthead h2 {
   color: white;
   font-weight: 100;
   margin-bottom: 0;
 }
-/* line 56, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 #masthead #site-navigation ul {
   list-style-type: none;
   float: right;
 }
-/* line 59, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 #masthead #site-navigation ul li {
   float: left;
   display: block;
   position: relative;
 }
-/* line 63, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 #masthead #site-navigation ul li > a {
   display: block;
-  padding: 15px;
+  padding: 15px 0 15px 30px;
   line-height: 20px;
   color: #645f6a;
   text-decoration: none;
 }
-/* line 69, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 #masthead #site-navigation ul li > a:hover {
   color: white;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 .main-content {
   padding: 4.95em 0 0;
   border-left: 10px solid #ee7310;
   border-right: 10px solid #ee7310;
 }
-/* line 82, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .main-content #more-content {
   color: #aaa;
   text-decoration: none;
   display: block;
   text-align: center;
   padding-bottom: 1.65em;
+  position: relative;
+}
+/* line 98, ../sass/style.scss */
+.main-content #more-content:hover {
+  color: #1d1d1d;
+}
+/* line 101, ../sass/style.scss */
+.main-content #more-content span {
+  position: relative;
+}
+/* line 103, ../sass/style.scss */
+.main-content #more-content span:before, .main-content #more-content span:after {
+  content: "";
+  width: 37px;
+  height: 7px;
+  top: 10px;
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url("../images/more-arrow.png") no-repeat left center;
+  position: absolute;
+}
+/* line 113, ../sass/style.scss */
+.main-content #more-content span:before {
+  left: -55px;
+}
+/* line 116, ../sass/style.scss */
+.main-content #more-content span:after {
+  right: -55px;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .secondary-content {
   background: whitesmoke;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .post .attachment-post-thumbnail {
   display: block;
   margin: 0 auto 3.3em;
 }
-/* line 100, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .post.small {
-  padding: 4.8em 0 3.3em 0;
+  padding: 4.8em 0;
   border-bottom: 2px solid #e6e6e6;
 }
-/* line 103, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .post.small h2 {
   font-size: 1.556em;
+  line-height: 1.3;
+  font-weight: normal;
 }
-/* line 105, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .post.small h2 a {
   color: #ee7310;
 }
-/* line 109, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
+.post.small h2 a:hover {
+  color: #1d1d1d;
+}
+/* line 147, ../sass/style.scss */
 .post.small .entry-summary {
   color: #666;
 }
-/* line 112, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .post.small .entry-meta {
   color: #aaa;
   font-size: 0.777em;
 }
-/* line 115, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .post.small .entry-meta a {
   color: #aaa;
   border-bottom: 1px solid #ddd;
 }
-/* line 121, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .post.feature {
   padding-bottom: 3.45em;
   position: relative;
 }
-/* line 124, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 .post.feature .entry-summary {
   font-weight: normal;
   color: #1d1d1d;
 }
-/* line 128, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .post.feature h2.entry-title, .post.feature h1.entry-title {
   margin-left: 2em;
   margin-right: 2em;
+  position: relative;
+  padding-bottom: 0.928125em;
+  margin-bottom: 0.928125em;
   text-align: center;
 }
-/* line 133, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
+.post.feature h2.entry-title:after, .post.feature h1.entry-title:after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  width: 216px;
+  bottom: 0;
+  background: #eee;
+  left: 50%;
+  margin-left: -108px;
+}
+/* line 184, ../sass/style.scss */
 .post.feature .entry-meta {
-  padding: 1.5em;
   text-align: center;
   position: relative;
-  color: #2b292e;
-  margin-bottom: 3.3em;
+  color: #aaa;
+  margin-bottom: 0.5em;
 }
-/* line 139, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .post.feature .entry-meta a {
   background: #fffbc9;
   color: #1d1d1d;
   text-decoration: none;
 }
-/* line 144, ../sass/style.scss */
-.post.feature .entry-meta:before, .post.feature .entry-meta:after {
-  content: "";
-  height: 2px;
-  position: absolute;
-  width: 216px;
-  background: #eee;
-  left: 50%;
-  margin-left: -108px;
-}
-/* line 153, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .post.feature .entry-meta:after {
   bottom: 0;
 }
-/* line 156, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .post.feature .entry-meta:before {
   top: 0;
 }
-/* line 161, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .post .entry-content {
   max-width: 700px;
   margin: 0 auto;
 }
-/* line 164, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .post .entry-content aside {
   width: 55px;
+  margin-top: 5px;
   position: absolute;
   left: 15px;
 }
-/* line 168, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .post .entry-content aside .social {
   margin-top: 1.65em;
 }
-/* line 171, ../sass/style.scss */
-.post .entry-content aside span.nav-previous, .post .entry-content aside span.nav-next, .post .entry-content aside span.nav-list {
+/* line 217, ../sass/style.scss */
+.post .entry-content aside span.nav-previous a, .post .entry-content aside span.nav-next a, .post .entry-content aside span.nav-list a {
   background: #f8f8f8;
   width: 56px;
   height: 56px;
   margin-bottom: 5px;
   display: block;
+  overflow: hidden;
+}
+/* line 224, ../sass/style.scss */
+.post .entry-content aside span.nav-previous a:hover, .post .entry-content aside span.nav-next a:hover, .post .entry-content aside span.nav-list a:hover {
+  background: #eaeaea;
+}
+/* line 228, ../sass/style.scss */
+.post .entry-content aside span.nav-previous span.meta-nav, .post .entry-content aside span.nav-next span.meta-nav, .post .entry-content aside span.nav-list span.meta-nav {
+  width: 0;
+  height: 0;
+  display: block;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+  margin: 21px auto;
 }
-/* line 180, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
+.post .entry-content aside span.nav-previous span {
+  border-right: 10px solid #999;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+/* line 246, ../sass/style.scss */
+.post .entry-content aside span.nav-next span {
+  border-left: 10px solid #999;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+/* line 254, ../sass/style.scss */
+.post .entry-content aside span.nav-next span {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  display: block;
+  border-left: 10px solid #999;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 21px auto;
+}
+/* line 266, ../sass/style.scss */
 .post .entry-content aside span.nav-list {
   position: relative;
 }
-/* line 182, ../sass/style.scss */
-.post .entry-content aside span.nav-list a {
+/* line 268, ../sass/style.scss */
+.post .entry-content aside span.nav-list span {
   width: 20px;
   height: 2px;
   background: #999;
@@ -213,78 +302,87 @@
   position: absolute;
   top: 27px;
   display: block;
+  text-indent: -9999px;
 }
-/* line 191, ../sass/style.scss */
-.post .entry-content aside span.nav-list a:before, .post .entry-content aside span.nav-list a:after {
+/* line 278, ../sass/style.scss */
+.post .entry-content aside span.nav-list span:before, .post .entry-content aside span.nav-list span:after {
   content: "";
   width: 20px;
   height: 2px;
   background: #999;
   left: 0;
+  display: block;
   position: absolute;
 }
-/* line 199, ../sass/style.scss */
-.post .entry-content aside span.nav-list a:before {
+/* line 287, ../sass/style.scss */
+.post .entry-content aside span.nav-list span:before {
   top: -4px;
 }
-/* line 202, ../sass/style.scss */
-.post .entry-content aside span.nav-list a:after {
+/* line 290, ../sass/style.scss */
+.post .entry-content aside span.nav-list span:after {
   bottom: -4px;
 }
 
-/* line 211, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 #comments {
   padding: 4.95em 0;
 }
-/* line 213, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
 #comments .container {
   max-width: 730px;
 }
 
-/* line 218, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 #crowd-grid {
   background: url("../images/crowd-grid.jpg") repeat center;
   text-align: center;
   padding: 4.95em 0;
 }
-/* line 222, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 #crowd-grid .container {
   border: none;
 }
-/* line 225, ../sass/style.scss */
+/* line 313, ../sass/style.scss */
 #crowd-grid h3 {
   font-size: 1.25em;
 }
-/* line 228, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 #crowd-grid a {
   color: #9c9aa9;
   text-decoration: none;
 }
-/* line 231, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 #crowd-grid a:hover {
   color: white;
 }
-/* line 235, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 #crowd-grid h2 {
   color: white;
   margin: 0;
 }
-/* line 238, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 #crowd-grid h2 a {
   color: white;
 }
-/* line 240, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 #crowd-grid h2 a strong {
   font-weight: 500;
 }
-/* line 243, ../sass/style.scss */
+/* line 331, ../sass/style.scss */
 #crowd-grid h2 a:hover {
   border-bottom: 2px solid white;
 }
 
+/* Post
+------------------------------------------------------*/
+/* line 342, ../sass/style.scss */
+.entry-content ul {
+  margin: 1.5em 2em;
+}
+
 /* Footer
 ------------------------------------------------------*/
-/* line 254, ../sass/style.scss */
+/* line 351, ../sass/style.scss */
 .site-footer {
   text-align: center;
   padding: 5em 0;
@@ -292,31 +390,31 @@
   overflow: hidden;
   background: #2d353b;
 }
-/* line 260, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 .site-footer a {
   color: #5f6e79;
 }
-/* line 262, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
 .site-footer a:hover {
   color: white;
 }
-/* line 266, ../sass/style.scss */
+/* line 363, ../sass/style.scss */
 .site-footer .latest-blog {
   position: relative;
   padding: 1em 0;
   margin: 1.5em 0;
   font-weight: normal;
 }
-/* line 271, ../sass/style.scss */
+/* line 368, ../sass/style.scss */
 .site-footer .latest-blog strong {
   font-weight: normal;
   color: #859098;
 }
-/* line 275, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
 .site-footer .latest-blog a:hover {
   color: #fff;
 }
-/* line 278, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 .site-footer .latest-blog :before {
   content: " ";
   height: 1px;
@@ -327,7 +425,7 @@
   left: 50%;
   margin-left: -100px;
 }
-/* line 288, ../sass/style.scss */
+/* line 385, ../sass/style.scss */
 .site-footer .latest-blog :after {
   content: " ";
   height: 1px;
@@ -338,13 +436,13 @@
   left: 50%;
   margin-left: -100px;
 }
-/* line 301, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 .site-footer .footer-nav ul li {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline;
   margin: 0 10px;
 }
-/* line 305, ../sass/style.scss */
+/* line 402, ../sass/style.scss */
 .site-footer .footer-nav ul li a {
   font-size: .6875em;
 }

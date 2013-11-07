@@ -45,7 +45,7 @@
 					<header class="entry-header col-md-4">
 						<h2 class="beta"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<div class="entry-meta">
-							<?php bugcrowd_entry_meta(); ?>
+							<time class="entry-date" datetime="%3$s"><?php echo esc_html( get_the_date() ) ?></time>
 						</div>
 					</header>
 					<div class="entry-summary col-md-7 col-md-offset-1">

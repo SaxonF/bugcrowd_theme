@@ -31,7 +31,7 @@ get_header(); ?>
 	        'order'            => 'DESC',
 	        'post_type'        => 'post',
 	        'post_status'        => 'publish',
-	        'posts_per_page'    => 3,
+	        'posts_per_page'    => 12,
 	        'offset' => 1,
 	        'paged'            => $paged,
 	    );

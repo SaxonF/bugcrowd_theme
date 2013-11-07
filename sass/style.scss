@@ -148,8 +148,8 @@ $lightGrey: #f5f5f5;
 			color:#666;
 		}
 		.entry-meta{
-			color:#aaa;
-			font-size:0.777em;
+			color:#bbb;
+			font-size:1em;
 			a{
 				color:#aaa;
 				border-bottom:1px solid #ddd;
@@ -186,7 +186,7 @@ $lightGrey: #f5f5f5;
 			position:relative;
 			color:#aaa;
 			margin-bottom:0.5em;
-			a{
+			.author, .entry-date{
 				background:#fffbc9;
 				color:#1d1d1d;
 				text-decoration: none;

@@ -165,8 +165,8 @@
 }
 /* line 150, ../sass/style.scss */
 .post.small .entry-meta {
-  color: #aaa;
-  font-size: 0.777em;
+  color: #bbb;
+  font-size: 1em;
 }
 /* line 153, ../sass/style.scss */
 .post.small .entry-meta a {
@@ -211,7 +211,7 @@
   margin-bottom: 0.5em;
 }
 /* line 189, ../sass/style.scss */
-.post.feature .entry-meta a {
+.post.feature .entry-meta .author, .post.feature .entry-meta .entry-date {
   background: #fffbc9;
   color: #1d1d1d;
   text-decoration: none;

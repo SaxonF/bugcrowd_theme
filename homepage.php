@@ -11,10 +11,10 @@ get_header(); ?>
 		$lastposts = get_posts( $args );
 		foreach($lastposts as $post) : setup_postdata($post); ?>
 			<article class="post feature container">
+				<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 				<div class="entry-meta caps">
 					<?php bugcrowd_entry_meta(); ?>
 				</div>
-				<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 				<?php the_post_thumbnail(); ?>
 				<div class="entry-summary delta">
 					<?php the_excerpt(); ?>
